@@ -54,15 +54,24 @@ var uponSuccess = function(data) {
         var city = airport.city;
         var lat1 = airport.latitude;
         var lon1 = airport.longitude;
-        console.log(city);    
+        console.log(city); 
       }
    }
+
+var lat1 = lat1.toFixed(0);
+var lon1 = lon1.toFixed(0);
+
    $("h2#iata-Code").html(iata);
    $("#airport-name").html(city);
-   $("#latitude").html(lat1);
-   $("#longitude").html(lon1);
    $(".plane-icon").addClass("plane-icon-moving");
    $("#summary-from").html(city);
+
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+lat1+"&lon="+lon1, function(data){
+    console.log(data.weather[0].main);
+  $("#title").html(data.weather[0].main);
+  $("#description").html(data.weather[0].description);
+  $("#description").html(data.weather[0].temp);
+  })
 
 }
 
@@ -122,32 +131,37 @@ $('#tellMeAboutTheGate').click(function(event){
 //     }
 //   })
 
-var variable='London'
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+",uk&callback", function(data){  
-    console.log(data.name)
-    console.log(data.main.temp_min)
-    console.log(data.main.temp_max)
-});
+// var variable='London'
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+",uk&callback", function(data){  
+//     console.log(data.name)
+//     console.log(data.main.temp_min)
+//     console.log(data.main.temp_max)
+// });
 
-var variable='London,uk'
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
-    console.log(data.name)
-});
+// var variable='London,uk'
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
+//     console.log(data.name)
+// });
 
-var variable='London,uk'
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
-    console.log(data.name);
-    $("#weatherCityName").html(data.name);
-})
+// var variable='London,uk'
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
+//     console.log(data.name);
+//     $("#weatherCityName").html(data.name);
+// })
 
-var variable='London,uk'
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
-    console.log(data.weather[0].main);
-$("#title").html(data.weather[0].main);
-})
+// var variable='London,uk'
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
+//     console.log(data.weather[0].main);
+// $("#title").html(data.weather[0].main);
+// })
 
-var variable= $("#airport-name").html();
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
-    console.log(data.weather[0].main);
-$("#title").html(data.weather[0].main);
-})
+// var variable= $("#airport-name").html();
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+variable+"&APPID=50cba9366f1541a95876463e9885c334", function(data){
+//     console.log(data.weather[0].main);
+// $("#title").html(data.weather[0].main);
+// })
+
+// $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+lat1+"&lon="+lon1, function(data){
+//     console.log(data.weather[0].main);
+// $("#title").html(data.weather[0].main);
+// })
