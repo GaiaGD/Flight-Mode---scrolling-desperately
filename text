@@ -1,0 +1,27 @@
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+
+
+planes
+avro rj885
+airbus
+
+1 =
+2 =
+3 =
+4 = 
+5 = passengers (maybe)
+6 = 
+7 = radar of the airport
+8 =
+9 = plane registration number
+10 =
+11 = from, departure airport
+12 = to, arrival airport
+13 = flight code, route
+14 =
+15 =
+16 =
+17 =
+
+weather
+APPID (API key)50cba9366f1541a95876463e9885c334

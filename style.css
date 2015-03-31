@@ -1,0 +1,359 @@
+*{
+box-sizing: border-box;
+ }
+
+.clearfix:before, .clearfix:after {
+  content:"";
+  display:table;
+}
+
+.clearfix:after{
+  clear:both;
+}
+
+h1 {font-size: 2em;
+	color: #ffffff;
+	margin: 20px 0;
+	text-align: center;
+}
+
+body {
+	background: -webkit-linear-gradient(#5cfbc6, #9de2f6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#5cfbc6, #9de2f6);  For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(#5cfbc6, #9de2f6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5cfbc6, #9de2f6); /* Standard syntax */
+	background-repeat: no-repeat;
+	margin: 3% 10% 3% 40%;
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #ffffff;
+	text-align: left;
+}
+
+.gradient-evening{
+	background: -webkit-linear-gradient(#023042, #81d7f9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#023042, #81d7f9);  For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(#023042, #81d7f9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#023042, #81d7f9); /* Standard syntax */
+	background-repeat: no-repeat;
+}
+
+.gradient-night{
+	background: -webkit-linear-gradient(#0075A5, #0075A5); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#0075A5, #0075A5);  For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(#0075A5, #0075A5); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#001D29, #0075A5); /* Standard syntax */
+	background-repeat: no-repeat;
+}
+.gradient-day{
+	background: -webkit-linear-gradient(#5cfbc6, #FFD700); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#5cfbc6, #FFD700);  For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(#5cfbc6, #FFD700); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#5cfbc6, #FFD700); /* Standard syntax */
+	background-repeat: no-repeat;
+}
+.gradient-dawn{
+	background: -webkit-linear-gradient(#4abef6, #fd7504); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4abef6, #fd7504);  For Opera 11.1 to 12.0 
+	background: -moz-linear-gradient(#4abef6, #fd7504); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4abef6, #fd7504); /* Standard syntax */
+	background-repeat: no-repeat;
+}
+
+.side {
+  position: fixed;
+  top: 2%;
+  left: 10%;
+	margin-top: 20px;
+	font-size: 0.8em;
+}
+
+#logo-flight-mode {
+  background-image: url("img/flightmode-logo.svg");
+  height: 133px;
+  width: 500px;
+  background-repeat: no-repeat;
+}
+
+.sidepanel {
+	display: block;
+	top: 2%;
+	left: 10%;
+	background: rgba(255,255,255,.2);
+	border-radius: 5em;
+	padding: 40px 60px;
+	margin-top: 20%;
+	font-size: 0.8em;
+	width: 70%;
+}
+
+
+.summary {
+	border-top: solid 1px #ffffff;
+	padding: 20px;
+	text-align: left;
+}
+
+.summaryText {
+	display: inline-block;
+}
+
+#summary-from {
+	display: inline-block;
+}
+
+.calendar {
+	font-size: 20px;
+	border-top: 0;
+}
+
+#hours {
+	display: inline-block;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#semicolumn {
+	display: inline-block;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#minute {
+	display: inline-block;
+	text-align: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#day {
+	display: block;
+	text-align: left;
+	font-size: 15px;
+}
+
+#day-number {
+	display: inline-block;
+	text-align: left;
+}
+
+#month {
+	display: inline-block;
+	text-align: left;
+}
+
+.hide {
+	display: none;
+}
+
+.wrap.form {
+	margin-top: 30%;
+}
+
+.wrap {
+	background: rgba(255,255,255,.1);
+	border-radius: 5em;
+	border: 2px solid #ffffff;
+	padding: 40px 60px;
+	margin: 100px 0;
+}
+
+.wrap>h1 {
+	font-size: 2em;
+	color: #ffffff;
+	margin: 20px 0;
+	text-align: center;
+	font-family: 'Quattrocento Sans' sans-serif;
+}
+
+.centerForm {
+	display: block;
+}
+
+.inputFlightCodeWrap {
+	display: block;
+	margin: 0 auto;
+}
+
+form.inputFlightCodeForm {
+	display: block;
+	margin: 0 auto;
+}
+
+#inputFlightCode {
+  padding: 15px;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  font-family: helvetica;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0);
+  border: 0;
+  border-bottom: solid 1px white;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+
+.button {
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  display: inline-block;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+  background: rgba(255,255,255,0);
+  margin: 0 auto;
+  display: block;
+}
+
+
+/*#buttonTellMeAboutFlight {
+  color: #ffffff;
+  border: solid 5px #ffffff;
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  margin: 10px 0;
+  background: rgba(255,255,255,.0);
+}*/
+
+#result {
+	
+}
+
+.menu-steps {
+	width: 100%;
+	border: solid 1px #ffffff;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.step.Nav {
+	display: inline-block;
+	width: 20%;
+	padding: 30px 0 30px 0;
+}
+
+.selected {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+.step.line.Nav {
+  height: 47px;
+  width: 5%;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  -webkit-transform: translateY(5px) translateX(20px) rotate(60deg);
+}
+
+.buttonTellMeMore {
+	border: solid 5px #ffffff;
+	padding: 10px;
+	width: 40%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.plane-icon {
+	background-image: url("img/plane-icon-01.svg");
+	background-repeat: no-repeat;
+	display: block;
+	height: 100px;
+	width: 100px;
+	margin-left: 0;
+	-webkit-transition: margin-left 3s linear;
+	-moz-transition: margin-left 3s linear;
+	-o-transition: margin-left 3s linear;
+	-ms-transition: margin-left 3s linear;
+	transition: margin-left 3s linear;
+}
+
+.plane-icon-moving {
+	margin-left: 85%;
+}
+
+.airportName {
+	display: inline-block;
+	width: 48%;
+}
+
+.Depart.airportName h2 {
+	font-family:'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 70px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.Arrival.airportName h2 {
+	font-family:'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 70px;
+	text-align: right;
+	margin: 0 auto;
+}
+
+.Depart.airportName p {
+	text-align: left;
+}
+
+.Arrival.airportName p {
+	text-align: right;
+}
+
+.planeInfo {
+	margin: 10% 0;
+}
+
+.planeInfoWrap h2 {
+	font-size: 2em;
+}
+
+.planeInfoWrap p {
+}
+
+.airport-group {
+}
+
+.airplane-info {
+    display: table-cell;
+    vertical-align: top;
+	display: inline-block;
+	margin: 0 auto;
+	width: 49%;
+	height: 100%;
+}
+
+.airplane-info>h2{
+	margin-top: 0;
+}
+
+.airplane-info-img {
+    display: table-cell;
+    vertical-align: top;
+	background-image: url("img/aircraft-a.svg");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 30px auto;
+	width: 49%;
+	height: 250px;
+}
+
+.gateInfo h2 {
+	font-size: 2em;
+}
+
+.gateMap p {
+}

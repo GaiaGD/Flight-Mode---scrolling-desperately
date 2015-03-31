@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:900,100,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+
+<section class="side">
+	<div class=" summary calendar">
+		<div class="hoursline">
+		<span id="hours"></span>
+		<span id="semicolumn">:</span>
+		<span id="minute"></span>
+		</div>
+		<div class="dateline">
+		<span id="month"></span>
+		<span id="day-number"></span>
+		<span id="day"></span>
+		</div>
+	</div>
+
+	<div class="summary flightcode">
+	FR893
+	</div>
+
+	<div class="summary itinerary">
+		<div>
+			<div class="summaryText">from:</div>
+			<div id="summary-from"></div>
+		</div>
+		<div>
+			<div class="summaryText">to:</div>
+			<div id="summary-to"></div>
+		</div>
+	</div>
+
+	<div class="summary airline">
+		<div>
+			<div class="summaryText">Airline:</div>
+			<div id="summary-from"></div>
+		</div>
+		<div>
+			<div class="summaryText">Airplane:</div>
+			<div id="summary-to"></div>
+		</div>
+	</div>
+
+	<div class="summary gate">
+	FR893
+	</div>
+</section>
+
+<section class="bording-pass-frame form">
+	<div class="form wrap">
+	  <h1>Flight Mode</h1>
+	    <div class="inputFlightCodeWrap">
+	    	<form id="inputFlightCodeForm">
+					<input id="inputFlightCode" type="text" name="inputFlightCode" placeholder="Enter Flight Code"/>
+					<input id="buttonTellMeAboutFlight" class="button" type="submit" value="Tell Me About My Flight"></div>
+			</form>
+	    </div>
+	</div>
+</section>
+
+<section class="bording-pass-frame itinerary">
+	<div class="fromWhereToWhere wrap">			
+		<div class="plane-icon">&nbsp;</div>
+			<div class="airport-group">
+				<div class="airportName Depart">
+						<h2 id="iata-Code">LAX</h2>
+						<p id="airport-name">Airport Info</p>
+						<p id="latitude">Latitude</p>
+						<p id="longitude">Latitude</p>
+						<p>Other Info</p>
+				</div>
+				<div class="airportName Arrival">
+						<h2 id="iata-Code">LAX</h2>
+						<p id="airport-name">City</p>
+						<p id="latitude">Latitude</p>
+						<p id="longitude">Latitude</p>
+						<p>Other Info</p>
+				</div>
+			</div>
+			<div id="tellMeAboutMyAircraft" class="button">
+			Aircraft Info
+			</div>
+	</div>
+</section>
+
+<section class="bording-pass-frame planeInfo">
+	<div class="planeInfo wrap">
+		<div class="airport-group">
+			<div class="airplane-info">
+				<h2>Your Aircraft</h2>
+				<p>Aircraft Info</p>
+				<p>Airline Info</p>
+				<p>Crew Info</p>
+			</div>
+			<div class="airplane-info-img">
+			</div>
+<!-- 
+			<div class="aiplane-info-img">
+			Aircraft:
+			</div> -->
+		</div>
+			<div id="tellMeAboutTheGate" class="button">
+					Gate Info
+			</div>
+		</div>
+</section>
+
+<section class="bording-pass-frame gateInfo">
+	<div class="gateInfo wrap">
+		<h2>Info on how to get to the Gate</h2>
+	<div class="gateMap">
+		<p>Departure Gates</p>
+		<p>Check In</p>
+		<p>Security Gate</p>
+	</div>
+		</div>
+</section>
+
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="script-new_json.js"></script>
+
+</body>
+</html>
